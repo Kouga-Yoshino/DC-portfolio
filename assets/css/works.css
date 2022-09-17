@@ -1,0 +1,122 @@
+@charset "UTF-8";
+body {
+  background-color: #868695;
+  height: 100vh;
+}
+
+.main-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main {
+  width: 80VW;
+  height: 100vh;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.title-h1 {
+  font-size: clamp(5rem, 7rem, 9rem);
+  color: #fff;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+/* ==========モーダル==========  */
+.container{
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  margin: 5rem;
+  padding-bottom: 10rem;
+}
+
+.container img{
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 8887;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 1s ease-in-out;
+}
+
+.modal-container .img {
+    background: #f1f1f1;
+    margin-bottom: 15px;
+}
+.modal-container{
+  display: flex;
+  gap: 3rem;
+}
+.modal-container p {
+    margin-top: 3rem;
+    margin-bottom: 10px;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    line-height: 2;
+}
+.modal-container span{
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-weight: bold;
+}
+.modal-container img{
+  max-width: 300px;
+}
+
+.modal-content {
+    background: #FFF;
+    overflow-y: auto;
+    padding: 20px 25px;
+    width: 90%;
+    max-width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 600px;
+    animation: show 0.6s linear 0s;
+    filter: drop-shadow(0px 2px 6px #777);
+}
+.modal-top {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.modal-close {
+    color: #707070;
+    text-decoration: none;
+    font-size: 3rem;
+    line-height: 1;
+    padding: 0 8px;
+}
+.modal-close:hover, .modal-close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-title {
+  color: #FFF;
+}
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* ====================  */
