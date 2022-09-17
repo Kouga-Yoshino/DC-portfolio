@@ -17,3 +17,54 @@ html {
     -ms-transform: translateX(-50%);
   margin-bottom: 3rem;
 }
+
+/* ==========ヘッダー========== */
+#header {
+  width: 20vw;
+  height: 100vh;
+  background-color: #e3ebff;
+  position: fixed;
+}
+
+.headerbox {
+  padding: 5rem 3rem;
+}
+
+.menus {
+  padding-top: 5rem;
+}
+
+.menu {
+  font-size: clamp(3rem, 2.5vw, 4rem);
+  color: #707070;
+  margin-bottom: 4rem;
+}
+
+.namelogo {
+  height: auto;
+  width: 100%;
+}
+
+.menuwarks{
+  color: #b4b4b4;
+}
+
+.menu-bt {
+  position: relative;
+  display: inline-block;
+}
+.menu-bt::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 10px;
+  background-color: #fff;
+  transition: .3s;
+  border-radius: 10px;
+}
+.menu-bt:hover::after {
+  width: 100%;
+}
+/* ====================  */
