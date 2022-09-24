@@ -42,6 +42,7 @@ body{
 
 .me{
     max-width: 400px;
+    max-width: 600px;
     height: auto;
     border-radius: 10px;
 }
@@ -52,14 +53,14 @@ body{
 }
 
 .me_p{
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem); 
+    font-size: clamp(1.5rem, 2.5vw, 3rem); 
     color: #707070;
     line-height: 1.5;
 }
 
 .me_personal{
     padding-top: 0.5rem;
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem); 
+    font-size: clamp(1.5rem, 2.5vw, 3rem); 
     color: #707070;
     line-height: 1.5;
 }
