@@ -34,7 +34,7 @@ body{
 }
 
 .mebox{
-    margin-top: 5rem;
+    margin-top: 10rem;
     display: flex;
     gap: 5rem;
     justify-content: center;
